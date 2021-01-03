@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='https://unpkg.com/d3@6.1.1/dist/d3.min.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="utf-8">
+    <title>scatterplot with menus</title>
+  </head>
+
+  <body>
+    <div id="menus">
+      <span id="y-menu"></span>
+      vs.
+      <span id="x-menu"></span>
+    </div>
+    <svg></svg>
+    <script src="{{ url_for('static', filename='dropdownmenu.js') }}"></script>
+    <script src="{{ url_for('static', filename='scatterplot.js') }}"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
